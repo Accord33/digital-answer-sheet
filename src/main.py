@@ -6,7 +6,7 @@ class AnswerGetterApp:
     def __init__(self, root):
         self.root = root
         self.root.title("デジタル回答用紙")
-        self.root.geometry("1200x650")
+        self.root.geometry("1200x750")
         self.root.configure(bg='lightgray')
         
         # 四角の数
@@ -78,7 +78,7 @@ class AnswerGetterApp:
         
         # 現在位置を示すインジケーター
         indicator_frame = tk.Frame(main_frame, bg='lightgray')
-        indicator_frame.pack(pady=20)
+        indicator_frame.pack(pady=15)
         
         self.position_label = tk.Label(indicator_frame, 
                                       text=f"現在位置: {self.current_position + 1}",
@@ -91,7 +91,7 @@ class AnswerGetterApp:
                                    text="右矢印キー: ○   左矢印キー: ×",
                                    font=('Arial', 12),
                                    bg='lightgray', fg='black')
-        instruction_label.pack(pady=10)
+        instruction_label.pack(pady=8)
         
         # リセットボタン
         reset_button = tk.Button(main_frame, text="リセット", 
@@ -99,7 +99,7 @@ class AnswerGetterApp:
                                 bg='red', fg='white',
                                 command=self.reset_boxes,
                                 width=10, height=2)
-        reset_button.pack(pady=20)
+        reset_button.pack(pady=15)
         
         self.update_display()
     
