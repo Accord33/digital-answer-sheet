@@ -36,7 +36,7 @@
 ### 1. リポジトリのクローン
 ```bash
 git clone <このリポジトリのURL>
-cd answer-getter
+cd digital-answer-sheet
 ```
 
 ### 2. 実行
@@ -67,7 +67,7 @@ python main.py
 このプロジェクトはMITライセンスの下で公開されています。
 
 ## 作者
-sakabekazuto
+Accord33
 
 ---
 **デジタル回答用紙で効率的な学習を！**
